@@ -1,0 +1,27 @@
+{
+  "title": "NeoVim tmp buffer to clipboard",
+  "rules": [
+    {
+      "description": "Launches nvim with temporary file opened at ~/my stuff/tmp/karabiner.txt. When written and closed, copies file contents to system clipboard automatically",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "fn",
+                "left_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open /Users/russoul/my\\ stuff/useful\\ programs/nvim-to-clipboard"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+   ]
+}
